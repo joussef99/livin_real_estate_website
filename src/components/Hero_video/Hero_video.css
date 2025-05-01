@@ -1,0 +1,92 @@
+/* Wrapper for the hero section */
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+/* Video background */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire section */
+  z-index: -1; /* Place the video behind the content */
+}
+
+/* Overlay content */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  width: 70%;
+  max-width: 1000px;
+  }
+
+/* Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: transparent;
+  border: white 1px solid;
+  border-radius: 100px;
+}
+
+.search-bar input{
+  border-radius: 10px;
+  font-size: 0.9rem;
+  width: 290px;
+  background: transparent;
+  color: whitesmoke;
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+}
+.search-bar select {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  width: 150px;
+  background: transparent;
+  color: gray;
+}
+
+.search-bar .search-button {
+  padding: 0.5rem 1rem;
+  margin: 0.6rem;
+  background-color: rgb(226, 113, 21); /* Red button */
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar .search-button:hover {
+  background-color: rgb(197, 93, 8); /* Darker red on hover */
+}

@@ -1,0 +1,41 @@
+
+.c-container {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Title for the section */
+.c-title {
+    /* margin-bottom: 1rem;
+    color: white; */
+    margin-left: 0.7rem;  
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.784) 0%, rgba(0, 0, 0, 0.451) 50%);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.3rem 1rem; */
+    }   
+
+/* Style for the Swiper slides */
+.i-companies {
+    gap: 0.6rem;    
+    padding: 2rem;
+    max-width: 80%;
+
+}
+
+/* Style for the logos */
+.i-companies img {
+    width: 120%;
+    max-width: 15rem;
+}
+.swiper-horizontal{
+    overflow: visible;
+}
+@media (max-width: 640px) {
+    .c-title {
+        align-items: center;
+    }
+    .p-buttons{
+        position: initial;
+    }
+}

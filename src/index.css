@@ -12,8 +12,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 a {
@@ -67,21 +67,46 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
+  color: #000000;
   font-weight: bold;
   font-size: 2rem;
+  font-family: "TheSeasons-Bold", sans-serif;
 }
 
 .secondaryText {
   color: rgb(140 139 139);
   font-size: 0.9rem;
+  font-family: "TheSeasons-Light", sans-serif;
 }
 .orangeText {
   color: orange;
   font-size: 1.5rem;
   font-weight: 600;
 }
-
+.button {
+  background: rgb(226, 113, 21);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background: rgb(197, 93, 8);
+  transform: scale(1.05);
+}
+.page-container > :nth-child(1) {
+  background: rgb(22, 22, 22, 0.8);
+  border-bottom: 1px solid rgb(22, 22, 22);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.page-container > :nth-child(2) {
+  margin-top: 5rem;
+}
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
@@ -89,7 +114,6 @@ a {
     margin: auto;
   }
 }
-
 @media (min-width: 640px) {
   .paddings {
     padding: 4rem;
@@ -109,4 +133,39 @@ a {
   .orangeText {
     font-size: 1.2rem;
   }
+}
+@font-face {
+  font-family: "TheSeasons-Bold";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-bd.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-BoldItalic";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-bdit.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-Italic";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-it.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-Light";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-lt.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-LightItalic";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-ltit.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-Regular";
+  src: url("/src/assets/Fonts/Fontspring-DEMO-theseasons-reg.otf")
+    format("opentype");
 }

@@ -1,0 +1,87 @@
+.d-container {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: -1rem;
+  }
+ .d-head .primaryText{
+    /* color: white; */
+    margin-left: 0.7rem;  
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.784) 0%, rgba(0, 0, 0, 0.451) 50%);
+    border: 1px solid white;
+    border-radius: 10px; */
+ }
+  
+  .large {
+    flex: 1 1 10%;
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    right: 1rem;
+  }
+  .large img{
+    width: 120%;
+    margin: 1px;
+ }
+  
+  .small-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 1.5rem;
+    flex: 1 1 40%;
+  }
+  
+  .district-card {
+    margin-top: -1rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    margin-right: -0.5rem;
+  }
+  .district-card:hover{
+    scale: 1.060;
+  }
+  .district-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}   
+  
+  .district-info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .district-info h3 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .district-info p {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    opacity: 0.8;
+  }
+.district-card:hover .district-info,
+.large:hover .district-info {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* @media (min-width: 768px){
+  .large{
+    content: url(/newcairo.jpg);
+  }
+} */

@@ -1,0 +1,90 @@
+.p-container {
+  overflow: hidden;
+  position: relative;
+}
+.p-head .primaryText {
+  margin-left: 0.7rem;
+}
+
+.p-card {
+  display: flex;
+  border-radius: 30px;
+  max-width: max-content;
+  margin: auto;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.p-card img {
+  height: 200px;
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.p-card:hover {
+  transform: scale(1.55);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(10deg) rotateX(10deg);
+}
+.p-card:hover img {
+  transform: scale(1.4);
+}
+.swiper-wrapper {
+  padding: 2rem 0;
+}
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .p-head {
+    align-items: center;
+  }
+  .p-buttons {
+    position: initial;
+  }
+}
+/* .p-card .p-price {
+  font-size: 1rem;
+  font-weight: 600;
+} */
+
+/* .p-card .primaryText {
+  font-size: 1rem; 
+} */
+
+/* .p-card .secondaryText {
+  font-size: 0.7rem; 
+  width: 15rem; 
+  color: gray; 
+} */
+/* .p-buttons {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+}
+.p-buttons button {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(136, 160, 255, 0.21) 217.91%
+  );
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+  color: blue;
+  cursor: pointer;
+} */

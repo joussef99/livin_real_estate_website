@@ -1,38 +1,32 @@
 [
   {
-    "name": "Aliva Priva Jardin",
+    "name": "New Cairo",
     "price": "47,043",
     "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "image": "./clubviews.jpg"
   },
   {
-    "name": "Asatti Garden City",
+    "name": " Mostakbl city",
     "price": "66,353",
     "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "image": "./azha.jpg"
   },
   {
-    "name": "Citralan Puri Serang",
+    "name": " North Coast",
     "price": "35,853",
     "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "image": "./lavista.jpg"
   },
   {
-    "name": "Aliva Priva Jardin",
+    "name": "Ain El Sokhna ",
     "price": "47,043",
     "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "image": "./ogami.jpg"
   },
   {
-    "name": "Asatti Garden City",
+    "name": "New Capital",
     "price": "66,353",
     "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
-  },
-  {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "image": "./parkc.jpg"
   }
 ]

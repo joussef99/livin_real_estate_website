@@ -1,0 +1,110 @@
+.footer-wrapper {
+  display: flex;
+  background:rgb(22, 22, 22);
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #dadad5;
+  overflow: hidden;
+}
+
+.footer-links {
+  gap: 60px;
+}
+.footer-column{
+  margin-left: 3rem;
+}
+
+.footer-column h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li:hover {
+  color: rgb(226, 113, 21);
+}
+
+
+.contact-us-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(140%, -50%);
+  background: gray;
+  padding: 54px;
+  border-radius: 10%;
+  width: 250px;
+  text-align: center;
+  color: #000000;
+  display: flex;                
+  flex-direction: column;       
+  align-items: center;          
+  max-width: 300px;
+}
+.contact-us-box h2{
+  margin-top: -2rem;
+  margin-bottom: 0.9rem;
+}
+.contact-line {
+  gap: 0.5rem;
+  margin: 1;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+
+}
+.contact-line a:hover {
+  color: rgb(226, 113, 21);
+}
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: -30px;
+
+}
+.social-icons svg {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  animation: alternate;
+  transform: scale(1.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-contact-image img {
+    width: 250px;
+  }
+
+  .contact-us-box {
+    width: 220px;
+    padding: 20px;
+  }
+}
