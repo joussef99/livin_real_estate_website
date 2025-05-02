@@ -41,7 +41,7 @@
 .menu-icon{
     display: none;
     font-size: 2rem;
-    color: var(--primary);
+    color: whitesmoke;
     cursor: pointer;
 }
 .buttonn {

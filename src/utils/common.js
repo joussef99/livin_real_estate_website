@@ -8,7 +8,7 @@ export const sliderSettings = {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 3,
@@ -45,7 +45,7 @@ export const sliderLunches = {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 3,

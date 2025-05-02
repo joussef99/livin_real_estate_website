@@ -47,24 +47,28 @@
   align-items: center;
 }
 
-/* Media Queries */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .L-head .primaryText {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .L-container {
-    flex-direction: column;
-    gap: 1rem;
+    padding: 1rem;
   }
 
   .L-card {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    transform: none !important; /* Disable hover scale on mobile */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .L-card img {
-    max-width: 100%;
+    height: auto;
+    max-width: 80vw;
+    object-fit: cover;
+    transform: none !important; /* Disable zoom-in on mobile */
   }
 }
+

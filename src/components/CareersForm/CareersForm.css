@@ -99,3 +99,26 @@ input[type="file"] {
   color: green;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .r-container {
+    flex-direction: column;
+  }
+
+  .r-left,
+  .r-right {
+    width: 100%;
+  }
+
+  .r-left {
+    padding: 1rem;
+  }
+
+  .r-right {
+    padding: 1.5rem 1rem;
+  }
+
+  .image-career img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+}

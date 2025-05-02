@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./Projects.css";
-import { sliderSettings } from "../../utils/common";
+import { sliderLunches, sliderSettings } from "../../utils/common";
 import data from "../../utils/slider.json";
 const Projects = () => {
   return (
@@ -11,8 +11,12 @@ const Projects = () => {
         <div className="p-head flexColStart">
           <span className="primaryText">Top Projects</span>
         </div>
-        <Swiper {...sliderSettings}>
-          {/* <Sliderbutton /> */}
+        <Swiper
+          loop={true}
+          freeMode={true}
+          navigation={true}
+          {...sliderLunches}
+        >
           {data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart p-card">

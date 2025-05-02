@@ -1,8 +1,8 @@
 /* Wrapper for the hero section */
-.hero{
+.hero {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
   z-index: 1;
   width: 70%;
   max-width: 1000px;
-  }
+}
 
 /* Title */
 .hero-title {
@@ -57,18 +57,19 @@
   border-radius: 100px;
 }
 
-.search-bar input{
-  border-radius: 10px;
-  font-size: 0.9rem;
+.search-bar input {
+  border-radius: 100px;
+  padding: 0.5rem;
+  font-size: 1rem;
   width: 290px;
   background: transparent;
   color: whitesmoke;
-  border: none; /* Remove default border */
-  outline: none; /* Remove default outline */
+  border: none; 
+  outline: none; 
 }
 .search-bar select {
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 100px;
   font-size: 0.8rem;
   width: 150px;
   background: transparent;
@@ -89,4 +90,60 @@
 
 .search-bar .search-button:hover {
   background-color: rgb(197, 93, 8); /* Darker red on hover */
+}
+.search-bar input,
+.search-bar select {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle background */
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: none;
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar .search-button {
+    width: 65%;
+    font-size: 1rem;
+    max-width: fit-content;
+  }
+
+  .hero-overlay {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .search-bar {
+    gap: 0.5rem;
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar .search-button {
+    font-size: 0.9rem;
+  }
 }

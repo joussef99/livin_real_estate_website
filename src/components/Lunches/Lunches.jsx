@@ -1,7 +1,7 @@
 import React from "react";
 import "./Lunches.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { sliderSettings } from "../../utils/common";
+import { sliderLunches, sliderSettings } from "../../utils/common";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
@@ -28,7 +28,7 @@ const Lunches = () => {
           loop={true}
           freeMode={true}
           navigation={true}
-          {...sliderSettings}
+          {...sliderLunches}
           autoplay={{
             delay: 3000,
             disableOnInteraction: true,
