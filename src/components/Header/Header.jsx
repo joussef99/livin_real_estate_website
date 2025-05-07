@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <section className={`h-wrapper ${scrolled ? "scrolled" : ""}`}>
       <div className="flexCenter paddings innerWidth h-container">
-        <img src="./public/livin-copy.png" alt="logo" width={150} />
+        <img src="/livin-copy.png" alt="logo" width={150} />
         <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
           <div className="flexCenter h-menu" style={getMenuStyle(menuOpened)}>
             <Link to="/">Home</Link>
